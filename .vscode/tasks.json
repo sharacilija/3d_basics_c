@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Raylib",
+            "type": "shell",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-std=c17",
+                "3d_world.c",
+                "-o",
+                "3d_world.exe",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
